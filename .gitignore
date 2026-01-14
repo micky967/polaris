@@ -42,3 +42,5 @@ next-env.d.ts
 
 # ANTHROPIC SUBSCRIPTION
 ANTHROPIC SUBSCRIPTION
+# Sentry Config File
+.env.sentry-build-plugin

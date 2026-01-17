@@ -6,6 +6,8 @@ import { ConvexProviderWithClerk } from "convex/react-clerk";
 import { ThemeProvider } from "./theme-provider";
 import { UnauthenticatedView } from "@/features/auth/components/unauthenticated-view";
 import { AuthLoadingView } from "@/features/auth/components/auth-loading-view";
+import { NodeToggle } from "./node-toggle";
+import { Navbar } from "./navbar";
 
 
 const convex = new ConvexReactClient(process.env.NEXT_PUBLIC_CONVEX_URL!);
@@ -20,13 +22,17 @@ export const Providers = ({ children }: { children: React.ReactNode }) => {
           enableSystem
           disableTransitionOnChange
         >
-        <Authenticated>
-          <UserButton afterSignOutUrl="/" />
-          {children}
-        </Authenticated>
-        <Unauthenticated>
-          <UnauthenticatedView />
-        </Unauthenticated>
+          <Authenticated>
+            <Navbar />
+            {/* <div className="flex items-center justify-between px-6 py-2 border-b sticky top-0 bg-background z-10">
+              <UserButton afterSignOutUrl="/" />
+              <NodeToggle />
+            </div> */}
+            {children}
+          </Authenticated>
+          <Unauthenticated>
+            <UnauthenticatedView />
+          </Unauthenticated>
           <AuthLoading>
             <AuthLoadingView />
           </AuthLoading>

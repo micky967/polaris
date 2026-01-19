@@ -1,5 +1,7 @@
 'use client';
 
+import { useProject } from "@/features/projects/hooks/use-projects";
+
 import { useState } from "react";
 import { cn } from "@/lib/utils";
 import { Id } from "../../../../convex/_generated/dataModel";
@@ -23,6 +25,12 @@ const Tab = ({
         )}
         >
             <span className="text-sm">{label}</span>
+            <span>test</span>
+            <span>test2</span>
+            <span>test3</span>
+            <span>test4</span>
+            <span>test5</span>
+            <span>test6</span>
         </div>
     );
 };

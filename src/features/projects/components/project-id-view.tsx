@@ -1,6 +1,8 @@
 'use client';
 
-import { useProject } from "@/features/projects/hooks/use-projects";
+import { useMutation } from "convex/react";
+import { api } from "../../../../convex/_generated/api";
+
 
 import { useState } from "react";
 import { cn } from "@/lib/utils";
@@ -25,12 +27,6 @@ const Tab = ({
         )}
         >
             <span className="text-sm">{label}</span>
-            <span>test</span>
-            <span>test2</span>
-            <span>test3</span>
-            <span>test4</span>
-            <span>test5</span>
-            <span>test6</span>
         </div>
     );
 };

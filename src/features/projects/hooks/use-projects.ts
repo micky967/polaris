@@ -1,6 +1,3 @@
-
-
-
 /* eslint-disable react-hooks/purity */
 
 import { useMutation, useQuery } from "convex/react";

@@ -44,3 +44,7 @@ next-env.d.ts
 ANTHROPIC SUBSCRIPTION
 # Sentry Config File
 .env.sentry-build-plugin
+
+
+#shad-ai-elements
+shad-ai-elements
